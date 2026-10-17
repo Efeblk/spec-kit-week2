@@ -1,0 +1,12 @@
+# Ignore OS and editor scratch files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+node_modules/
+*.log
+
+# NOTE: .specify/ is intentionally tracked per assignment requirements
+!.specify/

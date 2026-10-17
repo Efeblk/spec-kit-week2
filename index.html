@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1>Quote of the Day</h1>
+      <p class="subtitle">Timeless insights on software, simplicity, and craft</p>
+    </header>
+
+    <section class="quote-card" aria-labelledby="current-quote-heading">
+      <h2 id="current-quote-heading" class="visually-hidden">Current Quote</h2>
+      <figure class="quote-figure">
+        <blockquote id="quote-text" class="quote-text" aria-live="polite">
+          Loading quote...
+        </blockquote>
+        <figcaption class="quote-attribution">
+          &mdash; <cite id="quote-author" class="quote-author"></cite>
+        </figcaption>
+      </figure>
+
+      <div class="quote-actions">
+        <button id="new-quote-btn" type="button" class="btn btn-primary">
+          New quote
+        </button>
+        <button id="favorite-btn" type="button" class="btn btn-favorite" aria-pressed="false">
+          ♡ Favorite
+        </button>
+      </div>
+    </section>
+
+    <section class="favorites-section" aria-labelledby="favorites-heading">
+      <div class="favorites-header">
+        <h2 id="favorites-heading">Saved Favorites</h2>
+        <span id="favorites-count" class="favorites-badge" aria-label="Number of favorite quotes">0</span>
+      </div>
+
+      <p id="favorites-empty" class="favorites-empty">
+        No favorite quotes yet. Mark a quote as a favorite to save it here!
+      </p>
+
+      <ul id="favorites-list" class="favorites-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script defer src="src/quotes.js"></script>
+  <script defer src="src/app.js"></script>
+</body>
+</html>
