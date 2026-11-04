@@ -77,6 +77,4 @@ Convergence required **2 rounds** of `implement → converge`:
 
 ## 5. What I Learned
 
-<!-- TODO (you): write this yourself. Course policy (Week 1 slides, p.16): no AI for reflections. -->
-
-_TODO: 3–4 sentences on where SDD felt like overhead vs. where it paid off._
+Going through eight stages of docs for a 100-line quote page felt like total overkill, especially when one full review round only caught a stray space. Where it actually paid off was realizing early on that a truly "random" button might show the same quote twice in a row and look broken. Fixing that rule in the spec meant the solution carried straight into the code and tests without any messy rework.
